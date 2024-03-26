@@ -5,16 +5,16 @@
  }
 
  :root {
-      --font-family: 'Source Sans Pro', sans-serif;
-      --font-weight-light: 300;
-      --font-weight-bold: 900;
-      --background-color: #fff;
-      --text-color: #303030;
-      --accent-color: #16e0bd;
-      --h1-size: 4.5rem;
-      --h2-size: 3.75rem;
-      --h3-size: 1.5rem;
-    }
+    --font-family: 'Source Sans Pro', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-bold: 900;
+    --background-color: #fff;
+    --text-color: #303030;
+    
+    --h1-size: 4.5rem;
+    --h2-size: 3.75rem;
+    --h3-size: 1.5rem;
+  }
 
     @media (min-width: 800px) {
       :root {
@@ -39,12 +39,15 @@
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 1.125rem;
       line-height: 1.6;
+      background-color: #FFFAFA;
+      color: #000000;
 
       
   }  
 
   section {
       padding: 5em 2em;
+      
   }
 
   img {
@@ -52,13 +55,20 @@
       max-width: 100%;
       
       
+      
+  }
+
+  a {
+    color: #000000;
+    font-weight: 700;
+    font-size: 2em;
   }
 
   strong {font-weight: var(--font-weight-bold);};
 
 
   :focus {
-      outline: 3px solid var(--clr-accent);
+      outline: 3px solid #000000;
       outline-offset: 3px;
 
   }
@@ -70,11 +80,15 @@
   h3 {
       line-height: 1.1;
       margin: 0;
-  }
-
+   } 
   h1 {font-size: var(--h1-size);}
   h2 {font-size: var(--h2-size);}
   h3 {font-size: var(--h3-size);}
+
+  span {
+    font-size: 14px;
+    display: block;
+  }
 
 
   .section-title {
@@ -99,7 +113,7 @@
 
   .section-subtitle,
   .subtitle-about {
-      background: var(--accent-color);
+      background: #f4fbf4;
       padding: .25em 1em;
       font-family: var(--font-family);
       margin-bottom: 1em;
@@ -108,7 +122,7 @@
 
 
   .project-subtitle {
-      color: var(--accent-color);
+      color: #000000;
       font-weight: var(--font-weight-bold);
       margin-bottom: 2em;
   }
@@ -213,14 +227,14 @@
       height: 3px;
       border-radius: 1em;
       transition: transform 250ms ease-in-out;
-      background-color: #16e0bd;
+      background-color: #000000;
   }
   
   
   .hamburger::before,
   .hamburger::after {
-      content: '';
-      position: absolute;
+    content: '';
+    position: absolute;
       left: 0;
       right: 0;
       
@@ -233,12 +247,29 @@
 
 
   .intro-img {
-      box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-      0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    box-shadow: 0.25em 0.25em 0.75em #ffffff40,
+    0.125em 0.125em 0.25em #a8333326;
+    
+    
+    
   }
 
   .intro {
-      position: relative;
+    display: block;
+    position: relative;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: start;
+    
+    
+    
+}
+
+  .icons-lkdn {
+    color: #0077B5;
+    margin-left: 0.5em;
   }
 
   @media(min-width: 600px) {
@@ -255,31 +286,38 @@
         
         .intro-img {
             grid-area: img;
-            min-width: 250px;
+            min-width: 200px;
+            border-radius: 20% 70% 30% 30% ;
+            border: 2px solid #080606;
             position: relative;
             z-index: 2;
+
+        
            
         }
 
         .section-subtitle {
-            align-self: start;
-            grid-column: -1 / 1;
-            grid-row: 2;
-            text-align: right;
-            position: relative;
-            left: -1.5em;
-            width: calc(100% + 1.5em);
+           left: 0;
+           right:0 ;
+           align-self: start;
+           
         }
+
+ 
   }
 
+
+
+
   .my-skills {
-      background-color: #303030;
-      background-image: url(img/skills.jpg);
+      background-color: #FFFAFA;
       background-size: cover;
-      color: var(--background-color);
+      color: #000000;
       text-align: center;
       
   }
+
+  
 
 
   .section-title-skills {
@@ -301,18 +339,49 @@
   .main-skills {
     display: flex;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    gap: 18px;
-    color: whitesmoke;
-   text-transform: uppercase;
-   box-shadow: 0px 1px 0px 0px  var(--accent-color);
+    font-size: 3em;
 
   }
+
+  .html-icon {
+    color: #ff7700;
+    cursor: pointer;
+  }
+  
+  .css-icon {
+    color:#0f46dd ;
+    cursor: pointer;
+  }
+
+  .js-icon {
+    color: #e8c603;
+    cursor: pointer;
+  }
+
+  .bootstrap-icon {
+    color: #053fff;
+    cursor: pointer;
+  }
+
+  .figma-icon {
+    color: #ff0088;
+  }
+
+  .react-icon {
+    color: #02a7ff;
+  }
+
+  
+
+  
 
   h3 {
     font-size: 25px;
   }
+
 
 
   @media (min-width: 800px) {
@@ -322,10 +391,22 @@
            margin: 0 auto;
       }
 
+      .main-skills {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        font-size: 3em;
+    
+      }
+
       .skills + .skills {
             margin-left: 2em;
       }
+      
   }
+  
 
   
   
@@ -376,10 +457,11 @@
   }
 
   .my-project {
-      background-color: var(--text-color);
-      color: #fff;
+      
+      color: #000000;
       text-align: center;
       justify-content: center;
+      
   }
 
 
@@ -387,10 +469,22 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       
+      
+      
+      
+      
   }
+
+  
 
   .project-item {
       background-color: var var(--accent-color);
+      margin-bottom: 10px;
+      border: 1px solid rgb(241, 241, 241);
+      padding: 1em;
+      text-decoration: none;
+      color: #000000;
+      
   }
 
   .project-img {
@@ -410,10 +504,21 @@
       opacity: .5;
   }
 
+  .projejt-dis {
+    padding-top: 5em;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+  }
+
+  .github-icon-ref {
+    
+  }
+
 
   .footer {
-      background-color: #111;
-      color: var(--accent-color);
+      background-color: #000000;
+      color: #ffff;
       text-align: center;
       padding: 2.5em 0;
       font-size: var(--h3-size);
@@ -456,6 +561,11 @@
   .social-link {
       padding: .1em;
   }
+
+  
+
+
+
   
    
   
