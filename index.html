@@ -8,12 +8,13 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
             integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+            <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="style.css">
       
 </head>
 
-<body>
+<body class="bg-black text-gray-200">
       <header>
 
             <button class="nav-toggle" aria-label="toggle navigation">
@@ -23,9 +24,8 @@
             <nav class="nav">
                   <ul class="nav-list">
                         <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#skills" class="nav-link">My skills</a></li>
                         <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
-                        <li class="nav-item"><a href="#project" class="nav-link">My projects</a></li>
+                        <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
                   </ul>
 
             </nav>
@@ -33,158 +33,95 @@
       </header>
 
 
-      <section class="intro" id="home">
-            <h1 class="section-title-intro">
+      <section class="intro select-none" id="home">
+            <h1 class="section-title-intro section__title--intro">
                   Hi, I am <strong>Abubaker</strong>
                   </h1>
-            <p class="section-subtitle">Fullstack Student</p>
+            <p class="section-subtitle section__subtitle--intro text-gray-900 bg-gray-900 ">Front-end Developer</p>
             <div class="icons">
-                   <a  href="https://github.com/AbubakerSalah?tab=projects"> <i
-                    class="fab fa-github"></i></a>
+                   <a class="gith-icon" href="https://github.com/AbubakerSalah?tab=projects"> <i
+                    class="fab fa-github text-gray-100"></i></a>
                     <a class="icons-lkdn"href="http://linkedin.com/in/abubaker-salah-205483287"> 
                     <i class="fab fa-linkedin"></i></a>
             </div>
-            <img src="img/Abu2.jpg" alt="me" class="intro-img">
-      </section>
-
-      <section class="my-skills" id="skills">
-            <h2 class="section-title-skills">Skills</h2>
-
-            <div class="main-skills">
-                  <div class="html-icon">
-                        <i class="fab fa-html5"></i>
-                        <span>HTML</span>
-                        
-                  </div>
-
-                  <div class="css-icon">
-                        <i class="fab fa-css3-alt"></i>
-                        <span>CSS</span>
-                        
-                  </div>
-
-                  <div class="js-icon">
-                        <i class="fab fa-js"></i>
-                        <span>Javascript</span>
-                  </div>
-
-                  <div class="react-icon">
-                        <i class="fab fa-react"></i>
-                        <span>React</span>
-                  </div>
-
-
-                  <div >
-                        <i class="fab fa-git"></i>
-                        <span>Git</span>
-                        
-                  </div>
-                  <div>
-                        <i class="fab fa-github"></i>
-                  <span>GitHub</span>
-                  </div>
-
-                  <div class="bootstrap-icon">
-                        <i class="fab fa-bootstrap"></i>
-                        <span>bootstrap</span>
-                  </div>
-
-                  <div class="figma-icon">
-                        <i class="fab fa-figma"></i>
-                        <span>Figma</span>
-                  </div>
-
-                  
-
-                
-
-            </div>
-
-
-
-
-
+            <img src="img/Abu2.jpg" alt="A pic of me" class="intro-img">
       </section>
 
       <section class="about-me" id="about">
 
 
             <h2 class="section-about"> About me</h2>
-            <p class="subtitle-about"> FullStack student from Stockholm!</p>
+            <p class="subtitle-about text-gray-900"> A Self-Made front-end dev!</p>
 
             <div class="about- me-body">
-                  
-                  <p>   Hi! I'm Abubaker, a 26 year old FullStack student from Stockholm. I'm studying at Astar, where I'm learning all about web development.
-                        I love coding because it lets me keep learning and being creative. Every new project is a chance to solve problems and get better at what I do.
-                        I'm naturally curious, so I enjoy the challenge of figuring things out and making them work. 
-                        Whether it's fixing a bug or improving a website, I find a lot of satisfaction in solving problems.
-                        I'm also a social and down to earth person. I love traveling and discovering new cultures, which gives me fresh ideas and inspiration. 
-                        Spending time with my family is very important to me, and it helps keep me balanced. 
-                        Right now, I'm looking for a chance to be part of a team where I can develop myself, learn from others, and become a better developer. 
-                        Collaboration and growth are important to me, and I'm eager to contribute my skills while gaining new insights from experienced professionals.
-                        Take a look at my portfolio to see some of the projects I've worked on. 
-                        If you'd like to collaborate or just want to connect, feel free to reach out. 
-                        I'd love to hear from you!</p>
+                  <p>Hey there! I'm Abubaker, a self-taught Frontend Developer based in Stockholm.</p>
+                  <p>I absolutely love bringing digital ideas to life by creating websites that are not just functional
+                        but also look great!
+                        My journey in web development started with me diving headfirst into coding challenges and
+                        exploring the ever-evolving world of frontend technologies.
+                        It's been a ride, and today, I'm all about blending determination with creativity on every
+                        project.</p>
             </div>
-            <img src="img/Abu1.jpg" alt="about-me" class="about-img">
+            <img src="img/Abu1.jpg" alt="A pic of and my freind Jamal" class="about-img select-none">
       </section>
+
       
       <section class="my-project" id="project">
-            <h2 class="section-title"> Projects</h2>
-            <p class="project-subtitle">A selection of my projects. </p>
+            <h2 class="section-title text-gray-200 flex justify-center items-center"> Project</h2>
+            <p class="project-subtitle flex justify-center items-center">A selection of my projects. </p>
 
             
-            <div class="project">
+            <div class="project flex justify-center items-center flex-col md:flex-row ">
+                  <div class=" my-4 mx-8">
 
-                  <a href="https://github.com/AbubakerSalah/Oldgram.git" class="project-item">
-                        <img src="img/portfolio-01.png" alt="" class="project-img">
-                        <div class="projejt-dis">
-                              <p>Instagram clone build with HTML,CSS and vanila Javascript</p>
-                        </div>
-                        
-                              
-                        <div class="github-icon-ref">
-                              <i class="fab fa-github"></i>
-                        </div>
-                        
-                  </a>
-
-
-                  <a href="https://github.com/AbubakerSalah/Unit-Conversion.git" class="project-item">
-                        <img src="img/portfolio-02.jpg" alt="" class="project-img">
-                        <div class="projejt-dis">
-                              <p>A Unit Converter built with HTML, CSS and Vanilla JavaScript.</p>
-                        </div>
-                        <div class="github-icon-ref">
-                              <i class="fab fa-github"></i>
-                        </div>
-                  </a>
-
-                  <a href="https://github.com/AbubakerSalah/BoredBot-.git" class="project-item">
-                        <img src="img/portfolio-03.jpg" alt="" class="project-img">
-                        <div class="projejt-dis">
-                              <p>BoredBot build with JavaScript while learning APIs</p>
-                        </div>
-                        <div class="github-icon-ref">
-                              <i class="fab fa-github"></i>
-                        </div>
-                  </a>
-
-                  <a href="https://github.com/AbubakerSalah/Meme-Picker.git" class="project-item">
-                        <img src="img/portfolio-04.jpg" alt="" class="project-img">
-                        <div class="projejt-dis">
-                              <p>A meme picker build with HTML, CSS and JavaScript</p>
-                        </div>
-                              <i class="fab fa-github"></i>
+                        <a href="https://github.com/AbubakerSalah/Oldgram.git" class="project-item">
+                              <img src="img/portfolio-01.png" alt="" class="project-img h-18">
+                              <div class="projejt-dis">
                   
-                  </a>
+                              </div>
+                              
+                                    
+                              <div class="github-icon-ref">
+                                    <i class="fab fa-github"></i>
+                              </div>
+                              
+                        </a>
+                        
+
+                  </div>
+                 
+                  <div class="flex my-4 mx-8">
+
+                        <a href="https://github.com/AbubakerSalah/Oldgram.git" class="project-item">
+                              <img src="img/portfolio-01.png" alt="" class="project-img ">
+                              <div class="projejt-dis">
+                  
+                              </div>
+                              
+                                    
+                              <div class="github-icon-ref">
+                                    <i class="fab fa-github"></i>
+                              </div>
+                              
+                        </a>
+
+                  </div>
+                  
+                  
             </div>
+            <div class="flex justify-center items-end">
+                  <button class="border border-gray-500 py-3 px-4 font-bold text-sm hover:bg-gray-900 rounded-full">
+                        Show more projects
+                  </button>
+            </div>
+            
       </section>
-
-
       
-      <footer class="footer">
-            <a href="mailtoabubakersalah4@gmail.com" class="footer-link">abubakersalah4@gmail.com</a>
+
+
+      <!-- Footer -->
+      <footer class=" footer border-t border-gray-900" id="footer">
+            <a href="mailto:abubakersalah4@gmail.com" class="text-xl lg:text-4xl hover:text-gray-300">abubakersalah4@gmail.com</a>
             <ul class="social-list">
 
                   <li class="icons-lkdn"><a class="social-link"
@@ -193,6 +130,7 @@
                   class="fab fa-github"></i></i></a></li>
 
             </ul>
+            <p class="text-sm select-none mb-2">Copyright &copy; 2024 Abubaker</p>
 
       </footer>
 
